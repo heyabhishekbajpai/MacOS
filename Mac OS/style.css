@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('bg.webp');
+    background-size: cover;
+    overflow: hidden;
+}
+.applelogo{
+    height: 25px;
+    /* top: 1px; */
+    display: flex;
+    position: absolute;
+    left: 14px;
+    border-left: 5px;
+    border-radius: 5px;
+}
+.appleoptions{
+    position: absolute;
+    top: -320px;
+    transition: .11s ease-in;
+}
+.applemenu {
+    border-radius: 10px;
+    transform: inherit;
+    z-index: 0px;
+    height: 272px;
+    position: relative;
+    left: 7px;
+
+}
+.taskbar{
+    background-color: rgba(6, 70, 207, 0.603);
+    position: inherit;
+    height: 29px;
+    position: sticky;
+    overflow: hidden;
+    z-index: 1000px;
+}
+
+.finder1{
+    position: relative;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 55px;
+    color: white;
+    top: 2px;
+    height: 4px;
+    cursor: default;
+}
+.finder1 :hover{
+    background-color: #fff
+}
+.file{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 130px;
+    color: white;
+    top: 2px;
+    height: 4px;
+    cursor: default;
+}
+.filemenu{
+    position: absolute;
+    height: 400px;
+    top: -400px;
+    left: 124px;
+    border-radius: 3%;
+    transition: .11s ease-in;
+}
+.edit{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 175px;
+    color: white;
+    top: 2px;
+    height: 4px;
+    cursor: default;
+}
+.editmenu{
+    position: absolute;
+    height: 555px;
+    top: -560px;
+    left: 170px;
+    border-radius: 3%;
+    transition: .11s ease-in;
+}
+.view{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 225px;
+    color: white;
+    top: 2px;
+    height: 4px;
+    cursor: default;
+}
+.go{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 280px;
+    color: white;
+    top: 2px;
+    height: 4px;
+    cursor: default;
+}
+.gomenu{
+    position: absolute;
+    height: 460px;
+    top: -460px;
+    left: 275px;
+    border-radius: 4%;
+    transition: .11s ease-in;
+}
+.tools{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 320px;
+    color: white;
+    top: 2px;
+    height: 4px;
+    cursor: default;
+}
+.window{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 375px;
+    color: white;
+    top: 2px;
+    height: 4px;
+    cursor: default;
+}
+.help{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    left: 460px;
+    color: white;
+    top: 2px;
+    height: 4px;
+    cursor: default;
+}
+.ccicon{
+    height: 20px;
+    top: 3px;
+    display: flex;
+    position: absolute;
+    right: 195px;
+}
+.controlcenter{
+    position: absolute;
+    height: 500px;
+    top: -500px;
+    right: 80px;
+    border-radius: 5%;
+    transition: .11s ease-in-out;
+}
+.sicon{
+    height: 20px;
+    top: 3px;
+    display: flex;
+    position: absolute;
+    right: 235px;
+}
+.wifiicon{
+    height: 20px;
+    top: 3px;
+    display: flex;
+    position: absolute;
+    right: 275px;
+}
+.time1{
+    height: 20px;
+    top: 3px;
+    display: flex;
+    position: absolute;
+    right: -237px;
+    cursor: default;
+}
+.taskbarleft{
+position: relative;
+display: flex;
+height: 30px;
+}
+.taskbarright{
+    display: flex;
+    background: fixed;
+    position: absolute;
+    right: 0;
+    height: 30px;
+    }
+.menubardiv{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    border-width: 80%;
+    text-align: center;
+}
+
+
+.menubar{
+    position: absolute;
+    width: 78%;
+    bottom: 15px;
+    height: 76px;
+    background-color: #fff9f9b3;
+    border-radius: 5%;
+    border-block-start-style: groove;
+}
+
+
+.finder{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: 1200px;
+}
+.finder:hover{
+    transform: scale(150%);
+}
+.launchpad{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: 1050px; 
+}
+.launchpad:hover{
+    transform: scale(150%);
+}
+.safari{
+    
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: 900px; 
+}
+.safari:hover{
+    transform: scale(150%);
+}
+.messages{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: 750px; 
+}
+.messages:hover{
+    transform: scale(150%);
+}
+.mail{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: 600px; 
+}
+.mail:hover{
+    transform: scale(150%);
+}
+.maps{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: 450px; 
+}
+.maps:hover{
+    transform: scale(150%);
+}
+.gallaryicon{
+    position: absolute;
+    height: 56px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: 300px; 
+    border-radius: 32%;
+}
+.gallaryicon:hover{
+    transform: scale(150%);
+}
+.facetime{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: 150px; 
+}
+.facetime:hover{
+    transform: scale(150%);
+}
+.contact{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    /* margin-right: 0px;  */
+    
+}
+.contact:hover{
+    transform: scale(150%);
+}
+.remainder{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: -150px; 
+}
+.remainder:hover{
+    transform: scale(150%);
+}
+.notes{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: -300px; 
+}
+.notes:hover{
+    transform: scale(150%);
+}
+.appletv{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    border-radius: 25%;
+    margin-right: -450px; 
+}
+.appletv:hover{
+    transform: scale(150%);
+}
+.music{
+    position: absolute;
+    height: 60px;
+    transform: scale(110%);
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: -600px; 
+}
+.music:hover{
+    transform: scale(150%);
+}
+.podcast{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: -750px; 
+    border-radius: 20%;
+}
+.podcast:hover{
+    transform: scale(150%);
+}
+.applestore{
+    position: absolute;
+    height: 60px;
+    width: auto;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    border-radius: 19%;
+    margin-right: -900px; 
+}
+.applestore:hover{
+    transform: scale(150%);
+}
+.settings{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: -1050px; 
+}
+.settings:hover{
+    transform: scale(150%);
+}
+.trash{
+    position: absolute;
+    height: 60px;
+    bottom: 25px;
+    transition: 0.05s ease-in;
+    margin-right: -1200px; 
+    border-radius: 20%;
+}
+.trash:hover{
+    transform: scale(150%);
+}
+.output {
+    background: #eee;
+}
